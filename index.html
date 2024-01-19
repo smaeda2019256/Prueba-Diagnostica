@@ -4,102 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portafolio - Santiago Maeda</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Calculadora</title>
 </head>
 
 <body>
-    <header>
-        <h1>PORTAFOLIO</h1>
+    <header style="width: 100%; text-align: end;">
+        <h2 class="h2">Bienvenido a mi Calculadora</h2>
     </header>
-
-    <section>
-        <h2>SOBRE MÍ</h2>
-        <div style="text-align: center;">
-            <img src="Img/ImagenProgramador.png">
-            <p><b>Hola qué tal, mi nombre es Santiago Didiee Maeda Estrada y estudió en el Centro Educativo Técnico
-                    Laboral Kinal
-                    en la carrera de Informática en el grado de 6to Perito, con Carné 2019256, con varios conocimientos
-                    en el área de programación y bases de datos.</b></p>
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly> 
+        <div class="botones">
+            <button onclick="agregarCaracter('7')">7</button>
+            <button onclick="agregarCaracter('8')">8</button>
+            <button onclick="agregarCaracter('9')">9</button>
+            <button onclick="agregarCaracter('/')">/</button>
+            <button onclick="agregarCaracter('4')">4</button>
+            <button onclick="agregarCaracter('5')">5</button>
+            <button onclick="agregarCaracter('6')">6</button>
+            <button onclick="agregarCaracter('*')">*</button>
+            <button onclick="agregarCaracter('1')">1</button>
+            <button onclick="agregarCaracter('2')">2</button>
+            <button onclick="agregarCaracter('3')">3</button>
+            <button onclick="agregarCaracter('-')">-</button>
+            <button onclick="agregarCaracter('0')">0</button>
+            <button onclick="agregarCaracter('.')">.</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="agregarCaracter('+')">+</button>
+            <button onclick="limpiarPantalla()">C</button>
         </div>
-    </section>
+    </div>
 
-    <section>
-        <h2>PROYECTOS</h2>
-        <div class="proyectos-container">
-            <div class="proyecto">
-                <img src="Img/Ventas.png" height="650px" width="600px">
-                <p><b>Ventas</b><br>Este proyecto fue desarrollado en Java utilizando MySQL como gestor de Base de datos
-                    el cual servia para hacer compras, registro de clientes, inventario y con un carrito de compras
-                    para que el cliente se sintiera cómodo con sus compras.<a href="enlace" target="_blank"> Link del
-                        Proyecto aquí</a>.</p>
-            </div>
-            <div class="proyecto">
-                <img src="Img/Tonys.png" height="650px" width="300px">
-                <p><b>Tonys Kinal</b><br>Este proyecto fue echo y desarrollado en Java con una base de datos con MySQL
-                    que servía para la
-                    administración de un restaurante que en este caso mi proyecto estaba orientado a la comida mexicana
-                    y también crear
-                    usuarios ya fueran normales o adminstradores.<a href="enlace" target="_blank"> Link del Proyecto
-                        aquí</a>.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>TECNOLOGÍAS</h2>
-        <div class="tecnologias-container">
-            <div class="tecnologia">
-                <h3>• JAVA</h3>
-                <img src="Img/java.png">
-            </div>
-            <div class="tecnologia">
-                <h3>• HTML</h3>
-                <img src="Img/html.png">
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="tecnologias-container">
-            <div class="tecnologia">
-                <h3>• C++</h3>
-                <img src="Img/C++.png">
-            </div>
-            <div class="tecnologia">
-                <h3>• JavaScript</h3>
-                <img src="Img/JavaScript-logo.png">
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>MULTIMEDIA</h2>
-        <video controls>
-            <source src="Multimedia/BELLIGOL.mp4" type="video/mp4">
-        </video>
-        <audio controls>
-            <source src="Multimedia/2024pb.mp3">
-        </audio>
-    </section>
-
-    <section>
-        <h2>CONTACTO</h2>
-        <form>
-            <label for="nombre"><b>Nombre:</b></label>
-            <input type="text" name="nombre" required>
-
-            <label for="nombre"><b>No. Telefónico</b></label>
-            <input type="telefono" name="telefono" required>
-
-            <label for="email"><b>Correo Electrónico:</b></label>
-            <input type="email" name="email" required>
-
-            <label for="mensaje"><b>Mensaje:</b></label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-    </section>
+    <div class="foot">
+        <footer><b>Santiago Maeda - 2019256 ©</b></footer>
+    </div>
+    <script src="./assets/logica.js"></script>
 </body>
 
 </html>
