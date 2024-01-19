@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #0a1169;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    background: -webkit-linear-gradient(to right, #00000075, #0a0a0aa9), url(Img/fondo2.jpg);
+    background: linear-gradient(to right, #0800ff75, #030359fb), url(Img/fondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1250px;
+}
+
+img {
+    max-width: 80%;
+    height: 195px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0a1169;
+    border-bottom: 2px solid #0a1169;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.proyectos-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.proyecto {
+    width: 48%;
+}
+
+.proyecto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tecnologias-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tecnologia {
+    width: 48%;
+}
+
+.tecnologia img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
